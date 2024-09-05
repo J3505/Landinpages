@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  padding: 1rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.container > * {
+  background-color: yellowgreen;
+  border-radius: 0.5rem;
+}
+
+.container {
+  gap: 0.5rem;
+  display: grid;
+  grid-template: "Header" auto "capa1" minmax(50rem, auto) "capa2" 50rem "capa3" 50rem "capa4" 50rem "capa5" 50rem "footer" 15rem;
+}
+
+.Header {
+  grid-area: Header;
+  background-color: #e7dfdf;
+}
+.Header .padre {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-items: center;
+  padding: 0.5rem;
+}
+.Header .padre .hijo1 {
+  display: flex;
+  width: clamp(150px, 25%, 320px);
+  justify-content: space-between;
+}
+.Header .padre .hijo1-titulo {
+  display: flex;
+  align-items: center;
+}
+.Header .padre .hijo1-titulo p {
+  font-size: clamp(0.75rem, 0rem + 3vw, 1.3125rem);
+  font-weight: 700;
+}
+.Header .padre .hijo1-horaLugar {
+  display: flex;
+  align-items: center;
+}
+.Header .padre .hijo1-horaLugar p {
+  font-size: clamp(0.7rem, 1vw, 11px);
+  font-weight: 900;
+  padding: 0 0.1rem;
+}
+.Header .padre .hijo2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: clamp(180px, 20%, 350px);
+}
+.Header .padre .hijo2 .hijo2-Idioma {
+  display: flex;
+  background-color: #fff;
+  padding: 0 4px;
+  border-radius: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.Header .padre .hijo2 .hijo2-Idioma .a {
+  padding: 0.2rem 0.4rem;
+  background-color: aqua;
+  margin: 0.2rem;
+  border-radius: 40%;
+}
+.Header .padre .hijo2 .hijo2-Idioma .a:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+.Header .padre .hijo2 .hijo2-Idioma .b {
+  padding: 0.2rem 0.4rem;
+  border-radius: 40%;
+}
+.Header .padre .hijo2 .hijo2-Idioma .b:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+.Header .padre .hijo2 .hijo2-Iconos {
+  display: flex;
+  gap: 0.5rem;
+}
+.Header .padre .hijo2 .hijo2-Iconos .iconos1 {
+  display: flex;
+  position: relative;
+}
+.Header .padre .hijo2 .hijo2-Iconos .iconos1 .circulo1 {
+  position: absolute;
+  top: -15px;
+  left: 7px;
+  background-color: #f5c10a;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  display: flex;
+  font-size: 10px;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+}
+.Header .padre .hijo2 .hijo2-Iconos .iconos2 {
+  display: flex;
+  position: relative;
+}
+.Header .padre .hijo2 .hijo2-Iconos .iconos2 .icono2 {
+  position: absolute;
+  top: -15px;
+  left: 7px;
+  background-color: #f5c10a;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  display: flex;
+  font-size: 10px;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+}
+.Header .padre .hijo2 .hijo2-User {
+  display: flex;
+  align-items: center;
+  border-radius: 2rem;
+  padding: 0.1rem 0.2rem;
+  border: solid 1px rgb(209, 200, 200);
+}
+.Header .padre .hijo2 .hijo2-User img {
+  width: clamp(0.8rem, 10%, 5rem);
+}
+.Header .padre .hijo2 .hijo2-User .fotoUser {
+  width: clamp(1.7rem, 1vw, 2rem);
+}
+
+.capa1 {
+  grid-area: capa1;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.1764705882) 0%, rgba(255, 0, 0, 0.216) 100%), url(../img/img01.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.capa2 {
+  grid-area: capa2;
+  background-color: rgb(180, 34, 34);
+}
+
+.capa3 {
+  grid-area: capa3;
+  background-color: red;
+}
+
+.capa4 {
+  grid-area: capa4;
+  background-color: rgb(182, 122, 122);
+}
+
+.capa5 {
+  grid-area: capa5;
+  background-color: rgb(137, 114, 114);
+}
+
+.footer {
+  grid-area: footer;
+  background-color: aqua;
+}/*# sourceMappingURL=style.css.map */
