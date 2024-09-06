@@ -22,7 +22,7 @@ body {
 .container {
   gap: 0.5rem;
   display: grid;
-  grid-template: "Header" auto "capa1" minmax(50rem, auto) "capa2" 50rem "capa3" 50rem "capa4" 50rem "capa5" 50rem "footer" 26rem;
+  grid-template: "Header" auto "capa1" minmax(50rem, auto) "capa2" 50rem "capa3" 50rem "capa4" 50rem "capa5" auto "footer" 26rem;
 }
 
 .Header {
@@ -433,12 +433,6 @@ body {
   gap: 20px;
   padding: 20px;
 }
-@media (max-width: 768px) {
-  .capa5 {
-    grid-template-columns: 1fr;
-    gap: 10px;
-  }
-}
 .capa5 .capa5-1 {
   background-color: #e7dfdf;
   border-radius: 2rem;
@@ -493,11 +487,13 @@ body {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 160px;
 }
-.capa5 .capa5-2 .grid3 .grid3-1, .capa5 .capa5-2 .grid3 .grid3-2 {
+.capa5 .capa5-2 .grid3 .grid3-1,
+.capa5 .capa5-2 .grid3 .grid3-2 {
   background-color: #ffffff;
   display: grid;
 }
-.capa5 .capa5-2 .grid3 .grid3-1 label, .capa5 .capa5-2 .grid3 .grid3-2 label {
+.capa5 .capa5-2 .grid3 .grid3-1 label,
+.capa5 .capa5-2 .grid3 .grid3-2 label {
   align-self: end;
   justify-self: start;
 }
@@ -515,6 +511,143 @@ body {
   height: auto;
   -o-object-fit: contain;
      object-fit: contain;
+}
+.capa5 .capa5-3 {
+  display: flex;
+  align-items: stretch;
+}
+.capa5 .capa5-3 .card {
+  background-color: #ffffff;
+  flex-grow: 1;
+  -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 100%, 0 100%, 0 35%);
+          clip-path: polygon(50% 0%, 100% 0, 100% 100%, 0 100%, 0 35%);
+  padding: 1rem;
+  border-radius: 10px;
+  flex-direction: column;
+}
+.capa5 .capa5-3 .card .circulo {
+  display: flex;
+  justify-content: end;
+}
+.capa5 .capa5-3 .card .circulo .icono {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f8f8;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+.capa5 .capa5-3 .card .circulo .icono img {
+  width: 1rem;
+}
+.capa5 .capa5-3 .card .parrafo {
+  font-weight: 5000;
+  font-size: large;
+}
+.capa5 .capa5-3 .card .parrafo p {
+  padding: 4.5rem 0.1rem 0.3rem 0.1rem;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+.capa5 .capa5-3 .card .palabras-tres {
+  height: 100%;
+  display: flex;
+  padding: 1.5rem;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.capa5 .capa5-3 .card .palabras-tres span {
+  font-size: medium;
+  font-weight: 500;
+}
+.capa5 .capa5-4,
+.capa5 .capa5-6 {
+  display: flex;
+  align-items: stretch;
+}
+.capa5 .capa5-4 .card,
+.capa5 .capa5-6 .card {
+  background-color: #ffffff;
+  flex-grow: 1;
+  padding: 1rem;
+  border-radius: 10px;
+  flex-direction: column;
+}
+.capa5 .capa5-4 .card .circulo,
+.capa5 .capa5-6 .card .circulo {
+  display: flex;
+  justify-content: end;
+}
+.capa5 .capa5-4 .card .circulo .icono,
+.capa5 .capa5-6 .card .circulo .icono {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f8f8;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+.capa5 .capa5-4 .card .circulo .icono img,
+.capa5 .capa5-6 .card .circulo .icono img {
+  width: 1rem;
+}
+.capa5 .capa5-4 .card .parrafo,
+.capa5 .capa5-6 .card .parrafo {
+  font-weight: 5000;
+  font-size: large;
+}
+.capa5 .capa5-4 .card .parrafo p,
+.capa5 .capa5-6 .card .parrafo p {
+  padding: 4.5rem 0.1rem 0.3rem 0.1rem;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+.capa5 .capa5-4 .card .palabras-tres,
+.capa5 .capa5-6 .card .palabras-tres {
+  height: 100%;
+  display: flex;
+  padding: 1.5rem;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.capa5 .capa5-4 .card .palabras-tres span,
+.capa5 .capa5-6 .card .palabras-tres span {
+  font-size: medium;
+  font-weight: 500;
+}
+@media (max-width: 768px) {
+  .capa5 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto auto;
+  }
+  .capa5 .capa5-1 {
+    grid-column: 1/2;
+    grid-row: 2;
+  }
+  .capa5 .capa5-2 {
+    grid-column: 1/3;
+    grid-row: 1;
+  }
+  .capa5 .capa5-3 {
+    grid-column: 2/3;
+    grid-row: 2;
+  }
+  .capa5 .capa5-4 {
+    grid-column: 1/2;
+    grid-row: 3;
+  }
+  .capa5 .capa5-6 {
+    grid-column: 2/3;
+    grid-row: 3;
+  }
+  .capa5 .capa5-5,
+  .capa5 .capa5-7 {
+    display: none;
+  }
 }
 
 .footer {
