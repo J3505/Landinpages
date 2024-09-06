@@ -168,7 +168,21 @@ body {
 
 .capa5 {
   grid-area: capa5;
-  background-color: rgb(137, 114, 114);
+  background-color: #e7dfdf;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+@media (max-width: 768px) {
+  .capa5 {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
+.capa5 .capa5-1 {
+  background-color: #ffffff;
+  border-radius: 5px;
 }
 
 .footer {
