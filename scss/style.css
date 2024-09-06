@@ -23,7 +23,7 @@ body {
 .container {
   gap: 0.5rem;
   display: grid;
-  grid-template: "Header" auto "capa1" minmax(50rem, auto) "capa2" 50rem "capa3" 50rem "capa4" 50rem "capa5" auto "footer" 26rem;
+  grid-template: "Header" auto "capa1" 42rem "capa2" 50rem "capa3" 40rem "capa4" 50rem "capa5" auto "footer" 26rem;
 }
 
 .Header {
@@ -152,14 +152,12 @@ body {
   background-position: center;
 }
 .capa1 .capa1-hijo1 {
-  margin: 1rem;
-  display: flex;
+  padding: 1rem;
   height: 70%;
-}
-.capa1 .capa1-hijo1 .hijo1-contenedor {
   display: flex;
+  gap: 1rem;
 }
-.capa1 .capa1-hijo1 .hijo1-contenedor .contenedor1 p {
+.capa1 .capa1-hijo1 .texto-1 p {
   color: white;
   font-size: clamp(0.3rem, 0.4rem + 1vw, 0.7rem);
   font-weight: 200;
@@ -168,44 +166,44 @@ body {
   border: solid 2px slategray;
   border-radius: 15px;
 }
-.capa1 .capa1-hijo1 .hijo1-contenedor .contenedor2 .texto {
+.capa1 .capa1-hijo1 .texto-2 .textoA {
   color: black;
   margin: 1rem;
-  width: minmax(auto, 150px);
   color: white;
 }
-.capa1 .capa1-hijo1 .hijo1-contenedor .contenedor2 .texto p {
-  font-size: clamp(1.5625rem, -3.0208rem + 18.3333vw, 5rem);
+.capa1 .capa1-hijo1 .texto-2 .textoA .palabra {
+  font-size: 45px;
 }
-.capa1 .capa1-hijo1 .hijo1-contenedor .contenedor2 .boton {
+.capa1 .capa1-hijo1 .textoB .botn {
   display: flex;
   margin: 1rem;
   gap: 5px;
   align-items: center;
   position: relative;
 }
-.capa1 .capa1-hijo1 .hijo1-contenedor .contenedor2 .boton .btns1 {
+.capa1 .capa1-hijo1 .textoB .botn .textoLoren {
   background-color: #f8f8f8;
   padding: 10px 14px;
   border-radius: 8px;
 }
-.capa1 .capa1-hijo1 .hijo1-contenedor .contenedor2 .boton .btns2 {
+.capa1 .capa1-hijo1 .textoB .botn .espacio {
   background-color: #f8f8f8;
   width: 2rem;
   height: 1rem;
   padding: 0 12px;
   position: absolute;
-  left: 6rem;
+  left: 7rem;
   border-radius: 8px;
+  z-index: 0;
 }
-.capa1 .capa1-hijo1 .hijo1-contenedor .contenedor2 .boton .btns3 {
+.capa1 .capa1-hijo1 .textoB .botn .flechadiagonal {
   transform: rotate(45deg);
   background-color: #f8f8f8;
   padding: 4px;
   border-radius: 50%;
   display: flex;
 }
-.capa1 .capa1-hijo1 .hijo1-contenedor .contenedor2 .boton .btns3 .icon {
+.capa1 .capa1-hijo1 .textoB .botn .flechadiagonal img {
   background-color: #26283d;
   padding: 10px;
   border-radius: 50%;
@@ -311,11 +309,50 @@ body {
 .capa2 {
   grid-area: capa2;
   background-color: #f8f8f8;
-  grid-template: "caja1 " 5rem "caja2 " auto "caja3 " 15rem "caja4 " 15rem;
+  grid-template: "caja1 " 5rem "caja2 " 15rem "caja3 " 15rem "caja4 " 15rem;
 }
 .capa2 .cajas1 {
   grid-area: caja1;
-  background-color: rgb(72, 89, 89);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.capa2 .cajas1 .texto {
+  display: flex;
+  width: 5rem;
+  height: 2rem;
+  background-color: black;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+.capa2 .cajas1 .texto p {
+  color: white;
+  font-size: small;
+  font-weight: 300;
+}
+.capa2 .cajas1 .contenedor {
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding: 4rem;
+  gap: 5rem;
+}
+.capa2 .cajas1 .contenedor .texto-flecha {
+  font-size: 1.5rem;
+}
+.capa2 .cajas1 .contenedor .flecha {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  border: solid 1px grey;
+}
+.capa2 .cajas1 .contenedor .flecha img {
+  width: 1.5rem;
 }
 .capa2 .cajas2 {
   grid-area: caja2;
@@ -438,44 +475,42 @@ body {
   height: 25rem;
   border: 2px solid #f8f8f8;
 }
-.capa2 .cajas4 {
+.capa2 .cajas4L {
   grid-area: caja4;
-  background-color: rgb(75, 24, 195);
   display: flex;
+  flex-direction: column;
   padding: 2rem;
   justify-content: space-between;
 }
-.capa2 .cajas4 .texto {
-  font-size: 3rem;
+.capa2 .cajas4L .texto h3 {
+  font-size: 1.5rem;
+  padding: 1rem;
 }
-.capa2 .cajas4 .cajas4-1 {
-  background-color: aquamarine;
-}
-.capa2 .cajas4 .cajas4-1 .caja1-1 {
+.capa2 .cajas4L .mascajas {
   display: flex;
-  background-color: red;
-  width: 12rem;
   flex-direction: column;
 }
-.capa2 .cajas4 .cajas4-1 .caja1-1 div {
-  padding: 2px;
+.capa2 .cajas4L .mascajas .caja1-1 {
+  font-size: medium;
 }
-.capa2 .cajas4 .cajas4-1 .caja1-2 {
+.capa2 .cajas4L .mascajas .caja1-2 {
   display: flex;
   justify-content: flex-end;
-  gap: 2rem;
-  padding: 2px;
-  background-color: yellow;
+  gap: 3rem;
+  font-size: medium;
 }
-.capa2 .cajas4 .cajas4-1 .caja1-3 {
-  background-color: blueviolet;
+.capa2 .cajas4L .caja1-3 .textos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-.capa2 .cajas5 {
-  grid-area: caja4;
-  background-color: aqua;
+.capa2 .cajas4L .caja1-3 .textos .parrafo {
+  border: solid 1px grey;
+  padding: 4px;
+  border-radius: 10px;
 }
-.capa2 .cajas6 {
-  grid-area: caja4;
+.capa2 .cajas4L .caja1-3 .textos .palabras .b {
+  text-align: right;
 }
 @media (min-width: 575.98px) {
   .capa2 {
@@ -527,26 +562,335 @@ body {
   }
   .capa2 .cajas2 {
     grid-area: caja2;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: space-between;
+  }
+  .capa2 .cajas2 .a {
+    display: flex;
+    width: 2.5rem;
+    height: 2rem;
+  }
+  .capa2 .cajas2 .a .estrella {
+    display: flex;
+    justify-content: center;
+  }
+  .capa2 .cajas2 .a .estrella img {
+    width: 1.5rem;
+  }
+  .capa2 .cajas2 .a p {
+    font-size: 0.9rem;
+  }
+  .capa2 .cajas2 .b .minicard {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 15px;
+    width: 9rem;
+    height: 7rem;
+  }
+  .capa2 .cajas2 .b .minicard .imgLupa {
+    display: flex;
+    gap: 10px;
+  }
+  .capa2 .cajas2 .b .minicard .imgLupa .a {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .capa2 .cajas2 .b .minicard .imgLupa .Lupa {
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+  }
+  .capa2 .cajas2 .b .minicard .imgLupa .Lupa .b {
+    border: solid 1px grey;
+    position: absolute;
+    bottom: 1rem;
+    padding: 0.2rem;
+    border-radius: 50%;
+  }
+  .capa2 .cajas2 .b .minicard .texto {
+    padding: 5px;
+  }
+  .capa2 .cajas2 .b .minicard .texto p {
+    font-size: 15px;
   }
   .capa2 .cajas3 {
     grid-area: caja3;
   }
-  .capa2 .cajas4 {
+  .capa2 .cajas3 .contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    position: relative;
+  }
+  .capa2 .cajas3 .contenedor .imgs1 {
+    position: absolute;
+    background-color: #fff;
+    left: 5rem;
+    padding: 2rem;
+    border-radius: 5px;
+    width: 12rem;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .capa2 .cajas3 .contenedor .imgs1 .img {
+    background-image: url(/img/flamenco.jpg);
+    background-size: cover;
+    border-radius: 15px;
+    width: 150px;
+    height: 120px;
+  }
+  .capa2 .cajas3 .contenedor .imgs1 .texto {
+    position: relative;
+  }
+  .capa2 .cajas3 .contenedor .imgs1 .texto h4 {
+    font-size: medium;
+  }
+  .capa2 .cajas3 .contenedor .imgs1 .texto p {
+    font-size: small;
+  }
+  .capa2 .cajas3 .contenedor .imgs1 .texto .imgad {
+    position: absolute;
+    background-color: #26283d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    left: 6.5rem;
+    border-radius: 15px;
+    border: solid 1px #fff;
+  }
+  .capa2 .cajas3 .contenedor .imgs1 .texto .imgad img {
+    width: 1rem;
+    height: 1rem;
+  }
+  .capa2 .cajas3 .contenedor .imgs2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .capa2 .cajas3 .contenedor .imgs2 img {
+    border-radius: 15px;
+    width: 20rem;
+    height: 25rem;
+    border: 2px solid #f8f8f8;
+  }
+  .capa2 .cajas4L {
     grid-area: caja4;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    justify-content: space-between;
   }
-  .capa2 .cajas5 {
-    grid-area: caja5;
-    background-color: aqua;
+  .capa2 .cajas4L .texto h3 {
+    font-size: 1.5rem;
+    padding: 1rem;
   }
-  .capa2 .cajas6 {
-    grid-area: caja6;
-    background-color: rgb(27, 26, 74);
+  .capa2 .cajas4L .mascajas {
+    display: flex;
+    flex-direction: column;
+  }
+  .capa2 .cajas4L .mascajas .caja1-1 {
+    font-size: medium;
+  }
+  .capa2 .cajas4L .mascajas .caja1-2 {
+    display: flex;
+    justify-content: flex-end;
+    gap: 3rem;
+    font-size: medium;
+  }
+  .capa2 .cajas4L .caja1-3 .textos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .capa2 .cajas4L .caja1-3 .textos .parrafo {
+    border: solid 1px grey;
+    padding: 4px;
+    border-radius: 10px;
+  }
+  .capa2 .cajas4L .caja1-3 .textos .palabras .b {
+    text-align: right;
   }
 }
 
 .capa3 {
   grid-area: capa3;
-  background-color: red;
+  display: grid;
+  grid-template: "a" auto "b" 70rem;
+}
+.capa3 .general-1 {
+  grid-area: a;
+  display: flex;
+  padding: 2rem;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.capa3 .general-1 .btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.capa3 .general-1 .btns .botones {
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  gap: 3rem;
+}
+.capa3 .general-1 .btns .botones .btns-1 {
+  border: solid grey 1px;
+  border-radius: 15px;
+  padding: 0 8px;
+  font-size: small;
+}
+.capa3 .general-1 .btns .botones .btns-2 {
+  border: solid grey 1px;
+  border-radius: 15px;
+  padding: 0 8px;
+  font-size: small;
+}
+.capa3 .general-1 .btns .botones .btns-3 {
+  border: solid grey 1px;
+  border-radius: 15px;
+  padding: 0 8px;
+  font-size: small;
+}
+.capa3 .general-1 .btns .flecha {
+  border: solid grey 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  width: 50px;
+  height: 50px;
+}
+.capa3 .general-1 .btns .flecha img {
+  width: 2rem;
+}
+.capa3 .general-1 .imgen {
+  display: flex;
+  justify-content: center;
+}
+.capa3 .general-1 .imgen .img {
+  background-image: url("/img/flamenco.jpg");
+  background-size: cover;
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10rem;
+}
+.capa3 .general-1 .final-card {
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+}
+.capa3 .general-1 .final-card .palabras-1 {
+  display: flex;
+  gap: 4rem;
+}
+.capa3 .general-1 .final-card .palabras-1 .pla1 {
+  font-size: small;
+}
+.capa3 .general-1 .final-card .palabras-1 .pla2 {
+  font-size: small;
+}
+.capa3 .general-1 .final-card .palabras-2 .pla3 {
+  font-size: small;
+}
+.capa3 .general-2 {
+  grid-area: b;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 2rem;
+}
+.capa3 .general-2 .secction-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6rem;
+}
+.capa3 .general-2 .secction-1 .logo .img {
+  width: 8rem;
+}
+.capa3 .general-2 .secction-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 8rem;
+}
+.capa3 .general-2 .secction-2 .titulos {
+  padding: 2rem;
+}
+.capa3 .general-2 .secction-2 .titulos .letra {
+  font-size: larger;
+  font-weight: 800;
+}
+.capa3 .general-2 .secction-2 .titulos .letra {
+  font-size: larger;
+  font-weight: 800;
+}
+.capa3 .general-2 .secction-2 .parrafo {
+  font-size: small;
+}
+.capa3 .general-2 .secction-3 {
+  display: flex;
+  justify-content: space-between;
+}
+.capa3 .general-2 .secction-3 .galleria .imagenes {
+  background-image: url("/img/flamenco.jpg");
+  background-size: cover;
+  width: 4rem;
+  height: 5rem;
+  border-radius: 15px;
+}
+.capa3 .general-2 .secction-3 .galleria .imagenes p {
+  font-size: small;
+  font-weight: 800;
+}
+.capa3 .general-2 .secction-3 .galleria {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.capa3 .general-2 .secction-3 .galleria .imagenes {
+  background-image: url("/img/flamenco.jpg");
+  background-size: cover;
+  width: 4rem;
+  height: 5rem;
+  border-radius: 15px;
+}
+.capa3 .general-2 .secction-3 .galleria .imagenes p {
+  font-size: small;
+}
+.capa3 .general-2 .secction-3 .galleria .imagenes {
+  background-image: url("/img/flamenco.jpg");
+  background-size: cover;
+  width: 4rem;
+  height: 5rem;
+  border-radius: 15px;
+}
+.capa3 .general-2 .secction-3 .galleria .imagenes p {
+  font-weight: 800;
+}
+@media (min-width: 768px) {
+  .capa3 {
+    grid-template: "a b " 20rem "a b " 20rem;
+  }
+  .capa3 .general-1 {
+    display: flex;
+    padding: 2rem;
+  }
+  .capa3 .general-1 .btns {
+    display: flex;
+  }
 }
 
 .capa4 {

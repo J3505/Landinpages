@@ -4,15 +4,77 @@
 
     grid-template:
         "caja1 " 5rem
-        "caja2 " auto
+        "caja2 " 15rem
         "caja3 " 15rem
         "caja4 " 15rem;
 
+    // .cajas1 {
+    //     grid-area: caja1;
+    //     // width: 50px;
+    //     // background-color: rgb(72, 89, 89);
+    // }
     .cajas1 {
         grid-area: caja1;
-        // width: 50px;
-        background-color: rgb(72, 89, 89);
+
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+
+        .texto {
+            // position: absolute;
+            display: flex;
+            width: 5rem;
+            height: 2rem;
+            background-color: black;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+
+            p {
+                color: white;
+                font-size: small;
+                font-weight: 300;
+
+            }
+        }
+
+        .contenedor {
+            display: flex;
+            position: relative;
+            // background-color: blue;
+            // flex-direction: column;
+            align-items: center;
+            padding: 4rem;
+            // justify-content: center;
+            gap: 5rem;
+
+            .texto-flecha {
+                // color: black;
+                // color: white;
+                font-size: 1.5rem;
+            }
+
+            .flecha {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 1.5rem;
+                border-radius: 50%;
+                width: 2rem;
+                height: 2rem;
+                // background-color: aquamarine;
+                border: solid 1px grey;
+
+                img {
+                    width: 1.5rem;
+                    // height: 1rem;
+                }
+            }
+
+        }
+
     }
+
 
     .cajas2 {
         grid-area: caja2;
@@ -21,59 +83,67 @@
         flex-direction: column;
         padding: 1rem;
         justify-content: space-between;
-        .a{
+
+        .a {
             display: flex;
             width: 2.5rem;
             height: 2rem;
             ;
-            .estrella{
+
+            .estrella {
                 display: flex;
                 justify-content: center;
 
-                img{
+                img {
                     width: 1.5rem;
                 }
             }
-            p{
+
+            p {
 
                 font-size: 0.9rem;
                 // font-weight: 500;
             }
         }
-        .b{
-            .minicard{
+
+        .b {
+            .minicard {
                 background-color: #fff;
                 padding: 1rem;
                 border-radius: 15px;
                 width: 9rem;
                 height: 7rem;
 
-                .imgLupa{
+                .imgLupa {
                     display: flex;
                     gap: 10px;
-                    
-                    .a{
-                        width:  2.5rem;
+
+                    .a {
+                        width: 2.5rem;
                         height: 2.5rem;
                     }
-                    .Lupa{
+
+                    .Lupa {
                         position: relative;
                         width: 2rem;
                         height: 2rem;
-                        .b{
-                            border:  solid 1px grey;
+
+                        .b {
+                            border: solid 1px grey;
                             // background-color: grey;
                             position: absolute;
 
                             bottom: 1rem;
                             padding: 0.2rem;
-                            border-radius: 50% ;
+                            border-radius: 50%;
                         }
                     }
                 }
-                .texto{
+
+                .texto {
                     padding: 5px;
-                    p{
+
+                    p {
                         font-size: 15px;
                     }
                 }
@@ -85,53 +155,59 @@
     .cajas3 {
         grid-area: caja3;
 
-        .contenedor{
+        .contenedor {
             display: flex;
             align-items: center;
             justify-content: center;
             padding: 2rem;
             position: relative;
-            .imgs1{
+
+            .imgs1 {
                 position: absolute;
                 background-color: #fff;
                 left: 5rem;
                 padding: 2rem;
-                border-radius: 5px ;
+                border-radius: 5px;
                 width: 12rem;
                 height: 15rem;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                .img{
-                    background-image:  url(/img/flamenco.jpg);
+
+                .img {
+                    background-image: url(/img/flamenco.jpg);
                     background-size: cover;
-                    border-radius: 15px;                    
+                    border-radius: 15px;
                     width: 150px;
                     height: 120px;
                 }
-                .texto{
+
+                .texto {
                     position: relative;
-                    
-                    h4{
+
+                    h4 {
                         font-size: medium;
                     }
-                    p{
+
+                    p {
                         font-size: small;
                     }
-                    .imgad{
+
+                    .imgad {
 
                         position: absolute;
                         background-color: #26283d;
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        width:  3rem;
+                        width: 3rem;
                         height: 3rem;
                         left: 6.5rem;
                         border-radius: 15px;
                         border: solid 1px #fff;
-                        img{
+
+                        img {
                             width: 1rem;
                             height: 1rem;
 
@@ -140,11 +216,12 @@
                 }
             }
 
-            .imgs2{
+            .imgs2 {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                img{
+
+                img {
                     border-radius: 15px;
                     width: 20rem;
                     height: 25rem;
@@ -154,64 +231,62 @@
         }
     }
 
-    .cajas4 {
+    .cajas4L {
         grid-area: caja4;
-        // width: 50px;
-        background-color: rgb(75, 24, 195);
+        // width: 15rem;
+        // background-color: rgb(75, 24, 195);
         display: flex;
-        // flex-direction: column;
+        flex-direction: column;
         padding: 2rem;
+
         justify-content: space-between;
         // gap: 8rem;
         .texto{
-            font-size: 3rem;
-            // gap: 5rem;
+            h3{
+                font-size: 1.5rem;
+                padding: 1rem;
+            }
         }
-        .cajas4-1{
-            
-            // gap: 5rem;
-            background-color: aquamarine;
+        .mascajas{
+            display: flex;
+            flex-direction: column;
+            // background-color: red;
             .caja1-1{
-                display: flex;
-                background-color: red;
-                width: 12rem;
-                flex-direction: column;
-                div{
-                    padding: 2px;
-                    // display: flex;
-                    // justify-content:flex-end;
-                }
+                font-size: medium;
+
             }
             .caja1-2{
                 display: flex;
                 justify-content: flex-end;
-                gap: 2rem;
-                // width: 12rem;
-                padding: 2px;
-                background-color: yellow;
-
+                gap: 3rem;
+                font-size: medium;
+                // width: 10rem;
+                // height: 10rem;
             }
-            .caja1-3{
-                // padding: ;
-                background-color: blueviolet;
-                .textos{
+        }
+        .caja1-3{
+            .textos{
+                display: flex;
+                // gap: 3rem;
+                justify-content: space-around;
+                align-items: center;
+                // text-align: center;
+                .parrafo{
+                    border: solid 1px grey;
+                    padding: 4px;
+                    border-radius: 10px;
+                }
+                .palabras{
+                    .b{
+                        text-align: right;
 
+                    }
                 }
             }
         }
     }
 
-    .cajas5 {
-        grid-area: caja4;
-        // width: 50px;
-        background-color: aqua;
-    }
 
-    .cajas6 {
-        grid-area: caja4;
-        // width: 50px;
-        // background-color: rgb(27, 26, 74);
-    }
 
     // Estilos específicos para dispositivos pequeños (móviles)
     @media (min-width: 575.98px) {
@@ -220,7 +295,8 @@
         grid-template:
             "caja1 caja1 caja1" 10rem
             "caja2 caja3 caja4" 15rem
-            "caja2 caja3 caja4" 15rem;
+            "caja2 caja3 caja4" 15rem
+            ;
 
         .cajas1 {
             grid-area: caja1;
@@ -228,7 +304,8 @@
             padding: 15px;
             display: flex;
             flex-direction: column;
-            .texto{
+
+            .texto {
                 // position: absolute;
                 display: flex;
                 width: 5rem;
@@ -238,15 +315,15 @@
                 justify-content: center;
                 border-radius: 5px;
 
-                p{
+                p {
                     color: white;
                     font-size: small;
                     font-weight: 300;
-                    
+
                 }
             }
 
-            .contenedor{
+            .contenedor {
                 display: flex;
                 position: relative;
                 // background-color: blue;
@@ -255,12 +332,14 @@
                 padding: 2rem;
                 // justify-content: center;
                 gap: 5rem;
-                .texto-flecha{
+
+                .texto-flecha {
                     // color: black;
                     // color: white;
                     font-size: 1.5rem;
                 }
-                .flecha{
+
+                .flecha {
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -270,44 +349,225 @@
                     height: 2rem;
                     // background-color: aquamarine;
                     border: solid 1px grey;
-                    img{
+
+                    img {
                         width: 1.5rem;
                         // height: 1rem;
                     }
                 }
-                
+
             }
 
         }
 
         .cajas2 {
             grid-area: caja2;
-            // width: 50px;
-            // background-color: aqua;
+            // background-color: rgb(142, 188, 188);
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+            justify-content: space-between;
+    
+            .a {
+                display: flex;
+                width: 2.5rem;
+                height: 2rem;
+                ;
+    
+                .estrella {
+                    display: flex;
+                    justify-content: center;
+    
+                    img {
+                        width: 1.5rem;
+                    }
+                }
+    
+                p {
+    
+                    font-size: 0.9rem;
+                    // font-weight: 500;
+                }
+            }
+    
+            .b {
+                .minicard {
+                    background-color: #fff;
+                    padding: 1rem;
+                    border-radius: 15px;
+                    width: 9rem;
+                    height: 7rem;
+    
+                    .imgLupa {
+                        display: flex;
+                        gap: 10px;
+    
+                        .a {
+                            width: 2.5rem;
+                            height: 2.5rem;
+                        }
+    
+                        .Lupa {
+                            position: relative;
+                            width: 2rem;
+                            height: 2rem;
+    
+                            .b {
+                                border: solid 1px grey;
+                                // background-color: grey;
+                                position: absolute;
+    
+                                bottom: 1rem;
+                                padding: 0.2rem;
+                                border-radius: 50%;
+                            }
+                        }
+                    }
+    
+                    .texto {
+                        padding: 5px;
+    
+                        p {
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+    
         }
-
+    
         .cajas3 {
             grid-area: caja3;
-            // width: 50px;
-            // background-color: rgb(29, 56, 56);
+    
+            .contenedor {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 2rem;
+                position: relative;
+    
+                .imgs1 {
+                    position: absolute;
+                    background-color: #fff;
+                    left: 5rem;
+                    padding: 2rem;
+                    border-radius: 5px;
+                    width: 12rem;
+                    height: 15rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+    
+                    .img {
+                        background-image: url(/img/flamenco.jpg);
+                        background-size: cover;
+                        border-radius: 15px;
+                        width: 150px;
+                        height: 120px;
+                    }
+    
+                    .texto {
+                        position: relative;
+    
+                        h4 {
+                            font-size: medium;
+                        }
+    
+                        p {
+                            font-size: small;
+                        }
+    
+                        .imgad {
+    
+                            position: absolute;
+                            background-color: #26283d;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 3rem;
+                            height: 3rem;
+                            left: 6.5rem;
+                            border-radius: 15px;
+                            border: solid 1px #fff;
+    
+                            img {
+                                width: 1rem;
+                                height: 1rem;
+    
+                            }
+                        }
+                    }
+                }
+    
+                .imgs2 {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+    
+                    img {
+                        border-radius: 15px;
+                        width: 20rem;
+                        height: 25rem;
+                        border: 2px solid #f8f8f8;
+                    }
+                }
+            }
         }
-
-        .cajas4 {
+    
+        .cajas4L {
             grid-area: caja4;
-            // width: 50px;
+            // width: 15rem;
             // background-color: rgb(75, 24, 195);
-        }
-
-        .cajas5 {
-            grid-area: caja5;
-            // width: 50px;
-            background-color: aqua;
-        }
-
-        .cajas6 {
-            grid-area: caja6;
-            // width: 50px;
-            background-color: rgb(27, 26, 74);
+            display: flex;
+            flex-direction: column;
+            padding: 2rem;
+    
+            justify-content: space-between;
+            // gap: 8rem;
+            .texto{
+                h3{
+                    font-size: 1.5rem;
+                    padding: 1rem;
+                }
+            }
+            .mascajas{
+                display: flex;
+                flex-direction: column;
+                // background-color: red;
+                .caja1-1{
+                    font-size: medium;
+    
+                }
+                .caja1-2{
+                    display: flex;
+                    justify-content: flex-end;
+                    gap: 3rem;
+                    font-size: medium;
+                    // width: 10rem;
+                    // height: 10rem;
+                }
+            }
+            .caja1-3{
+                .textos{
+                    display: flex;
+                    // gap: 3rem;
+                    justify-content: space-around;
+                    align-items: center;
+                    // text-align: center;
+                    .parrafo{
+                        border: solid 1px grey;
+                        padding: 4px;
+                        border-radius: 10px;
+                    }
+                    .palabras{
+                        .b{
+                            text-align: right;
+    
+                        }
+                    }
+                }
+            }
         }
     }
 }

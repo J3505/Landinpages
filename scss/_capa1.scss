@@ -8,21 +8,16 @@
     background-position: center;
 
     .capa1-hijo1 {
-        margin: 1rem;
-        display: flex;
-        // background-color: antiquewhite;
+        padding: 1rem;
+        // background-color: tomato;
+        // width: 29rem;
         height: 70%;
-
-        .hijo1-contenedor {
-            display: flex;
-
-
-            .contenedor1 {
-
-                // background-color: rgb(29, 120, 120);
-
-                p {
-                    color: white;
+        display: flex;
+        gap: 1rem;
+        .texto-1{
+            // background-color: #f8f8f8;
+            p{
+                color: white;
                     // font-size: 0.8rem;
                     font-size: clamp(0.3rem, 0.4rem + 1vw, 0.7rem);
                     font-weight: 200;
@@ -30,74 +25,73 @@
                     padding: 0.2rem;
                     border: solid 2px slategray;
                     border-radius: 15px;
-
-                }
             }
-
-            .contenedor2 {
-                
-                .texto {
-                    color: black;
+        }
+        .texto-2{
+            .textoA{
+                color: black;
                     margin: 1rem;
-                    width: minmax(auto, 150px);
+                    // width: minmax(auto, 150px);
 
                     color: white;
                     // border: 2px solid;
-                    p{
-                        font-size: clamp(1.5625rem, -3.0208rem + 18.3333vw, 5rem);
-                    }
+                .palabra{
+                    font-size: 45px;
+    
+                    
                 }
-                
-                .boton {
 
-                    // background-color: rgba(90, 40, 40, 0.519);
-                    // position: absolute;
-                    // top: 30rem;
-                    // left: 15rem;
-                    display: flex;
+
+            }
+            
+                
+        }
+        .textoB{
+
+            .botn{
+                display: flex;
                     margin: 1rem;
                     gap: 5px;
                     align-items: center;
                     position: relative;
-
-                    .btns1 {
+                    .textoLoren{
                         background-color: #f8f8f8;
                         padding: 10px 14px;
                         border-radius: 8px;
-
+                        
                     }
-
-                    .btns2 {
+                    .espacio{
                         background-color: #f8f8f8;
                         width: 2rem;
                         height: 1rem;
                         padding: 0 12px;
                         position: absolute;
-                        left: 6rem;
+                        left: 7rem;
                         border-radius: 8px;
+                        z-index: 0;
                         
                     }
-
-                    .btns3 {
-                        transform: rotate(45deg);
+                    .flechadiagonal{
+                    transform: rotate(45deg);
                         background-color: #f8f8f8;
                         padding: 4px;
                         border-radius: 50%;
                         display: flex;
-                        // right: 9px;
-                
-
-                        .icon {
-                            background-color: #26283d;
+                    img{
+                        background-color: #26283d;
                             padding: 10px;
                             border-radius: 50%;
-                            
-                            
-                        }
                     }
                 }
             }
+
         }
+
+
+
+
+
+        
     }
 
     .capa1-hijo2 {
