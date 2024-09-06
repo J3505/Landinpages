@@ -1,6 +1,6 @@
 .footer {
     grid-area: footer;
-    background-color: #ffffff;
+    background-color: #f8f8f8;
   
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -11,7 +11,7 @@
     }
   
     .footer-section {
-      background-color: #ffffff;
+      background-color: #f8f8f8;
       border-radius: 5px;
   
       &:nth-child(1) {

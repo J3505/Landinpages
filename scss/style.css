@@ -10,6 +10,7 @@ html {
 
 body {
   min-height: 100%;
+  background: #f8f8f8;
   padding: 1rem;
   font-family: "Roboto", sans-serif;
 }
@@ -422,8 +423,416 @@ body {
 }
 
 .capa4 {
-  grid-area: capa4;
-  background-color: rgb(182, 122, 122);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 5rem;
+  background-color: #f8f8f8;
+  gap: 10px;
+  padding: 3rem;
+}
+.capa4 .capa4-1 {
+  grid-column: 1/-1;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+}
+.capa4 .capa4-1 .grid2 {
+  background-color: #f8f8f8;
+  grid-column: 2/4;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 80% 20%;
+}
+.capa4 .capa4-1 .grid2 .grid2-1 label {
+  font-size: xx-large;
+}
+.capa4 .capa4-1 .grid2 .grid2-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.capa4 .capa4-1 .grid2 .grid2-2 label {
+  font-size: small;
+}
+.capa4 .capa4-2 {
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 115px 200px 100px;
+  gap: 20px;
+}
+.capa4 .capa4-2 .grid7 {
+  border-radius: 2rem;
+  padding: 1rem;
+  background-color: rgb(14, 14, 66);
+}
+.capa4 .capa4-2 .grid7 .grid7-1 {
+  height: 70%;
+  background-color: rgb(14, 14, 66);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  position: relative;
+}
+.capa4 .capa4-2 .grid7 .grid7-1 img {
+  border-radius: 2rem;
+  margin-right: 1rem;
+}
+.capa4 .capa4-2 .grid7 .grid7-1 label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0.5rem;
+  color: white;
+}
+.capa4 .capa4-2 .grid7 .grid7-2 {
+  height: 30%;
+  background-color: rgb(14, 14, 66);
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.capa4 .capa4-2 .grid7 .grid7-2 label {
+  color: white;
+}
+.capa4 .capa4-2 .grid8 {
+  grid-column: 2/4;
+  grid-row: 1/4;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 1fr;
+}
+.capa4 .capa4-2 .grid8 .grid8-1 {
+  position: relative;
+}
+.capa4 .capa4-2 .grid8 .grid8-1 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.capa4 .capa4-2 .grid8 .grid8-2 {
+  background-color: #ffffff;
+  display: grid;
+  grid-template-rows: 25% 65% 10%;
+}
+.capa4 .capa4-2 .grid8 .grid8-2 .font1 {
+  display: flex;
+  padding: 1rem;
+}
+.capa4 .capa4-2 .grid8 .grid8-2 .font1 svg {
+  width: 4rem;
+  height: 4rem;
+}
+.capa4 .capa4-2 .grid8 .grid8-2 .font2 {
+  display: flex;
+  padding: 1rem;
+}
+.capa4 .capa4-2 .grid8 .grid8-2 .font2 label {
+  font-size: x-large;
+}
+.capa4 .capa4-2 .grid8 .grid8-2 .font3 {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.capa4 .capa4-2 .grid5 .circulo {
+  display: flex;
+  justify-content: end;
+}
+.capa4 .capa4-2 .grid5 .circulo .icono {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f8f8;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+.capa4 .capa4-2 .grid5 .circulo .icono svg {
+  width: 1rem;
+}
+.capa4 .capa4-2 .grid6 {
+  border-radius: 2rem;
+  padding: 1rem;
+  background-color: rgb(14, 14, 66);
+}
+.capa4 .capa4-2 .grid6 .grid6-1 {
+  height: 70%;
+  background-color: rgb(14, 14, 66);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  position: relative;
+}
+.capa4 .capa4-2 .grid6 .grid6-1 img {
+  border-radius: 2rem;
+  margin-right: 1rem;
+}
+.capa4 .capa4-2 .grid6 .grid6-1 label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0.5rem;
+  color: white;
+}
+.capa4 .capa4-2 .grid6 .grid6-2 {
+  height: 30%;
+  background-color: rgb(14, 14, 66);
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.capa4 .capa4-2 .grid6 .grid6-2 label {
+  color: white;
+}
+.capa4 .capa4-2 .grid9 .circulo {
+  display: flex;
+  justify-content: start;
+  align-self: flex-end;
+}
+.capa4 .capa4-2 .grid9 .circulo .icono {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f8f8;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+.capa4 .capa4-2 .grid9 .circulo .icono svg {
+  width: 1rem;
+}
+.capa4 .capa4-2 .capa4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 5rem;
+  background-color: #f8f8f8;
+  gap: 10px;
+  padding: 3rem;
+}
+.capa4 .capa4-2 .capa4 .capa4-1 {
+  grid-column: 1/-1;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+}
+.capa4 .capa4-2 .capa4 .capa4-1 .grid2 {
+  background-color: #f8f8f8;
+  grid-column: 2/4;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 80% 20%;
+}
+.capa4 .capa4-2 .capa4 .capa4-1 .grid2 .grid2-1 label {
+  font-size: xx-large;
+}
+.capa4 .capa4-2 .capa4 .capa4-1 .grid2 .grid2-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.capa4 .capa4-2 .capa4 .capa4-1 .grid2 .grid2-2 label {
+  font-size: small;
+}
+.capa4 .capa4-2 .capa4 .capa4-2 {
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 115px 200px 100px;
+  gap: 20px;
+}
+.capa4 .capa4-2 .capa4 .capa4-2 .grid7 {
+  border-radius: 2rem;
+  padding: 1rem;
+  background-color: rgb(14, 14, 66);
+}
+.capa4 .capa4-2 .capa4 .capa4-2 .grid7 .grid7-1 {
+  height: 70%;
+  background-color: rgb(14, 14, 66);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  position: relative;
+}
+.capa4 .capa4-2 .capa4 .capa4-2 .grid7 .grid7-1 img {
+  border-radius: 2rem;
+  margin-right: 1rem;
+}
+.capa4 .capa4-2 .capa4 .capa4-2 .grid7 .grid7-1 label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0.5rem;
+  color: white;
+}
+.capa4 .capa4-2 .capa4 .capa4-2 .grid7 .grid7-2 {
+  height: 30%;
+  background-color: rgb(14, 14, 66);
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.capa4 .capa4-2 .capa4 .capa4-2 .grid7 .grid7-2 label {
+  color: white;
+}
+.capa4 .capa4-2 .capa4 .capa4-2 .grid8 {
+  grid-column: 2/4;
+  grid-row: 1/4;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 1fr;
+}
+.capa4 .capa4-2 .capa4 .capa4-2 .grid8 .grid8-1 {
+  position: relative;
+}
+.capa4 .capa4-2 .capa4 .capa4-2 .grid8 .grid8-1 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.capa4 .capa4-2 .capa4 .capa4-2 .grid8 .grid8-2 {
+  background-color: #ffffff;
+  display: grid;
+  grid-template-rows: 25% 65% 10%;
+}
+.capa4 .capa4-2 .capa4 .capa4-2 .grid8 .grid8-2 .font1 {
+  display: flex;
+  padding: 1rem;
+}
+.capa4 .capa4-2 .capa4 .capa4-2 .grid8 .grid8-2 .font1 svg {
+  width: 4rem;
+  height: 4rem;
+}
+.capa4 .capa4-2 .capa4 .capa4-2 .grid8 .grid8-2 .font2 {
+  display: flex;
+  padding: 1rem;
+}
+.capa4 .capa4-2 .capa4 .capa4-2 .grid8 .grid8-2 .font2 label {
+  font-size: x-large;
+}
+.capa4 .capa4-2 .capa4 .capa4-2 .grid8 .grid8-2 .font3 {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.capa4 .capa4-2 .capa4 .capa4-2 .grid5 .circulo {
+  display: flex;
+  justify-content: end;
+}
+.capa4 .capa4-2 .capa4 .capa4-2 .grid5 .circulo .icono {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f8f8;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+.capa4 .capa4-2 .capa4 .capa4-2 .grid5 .circulo .icono svg {
+  width: 1rem;
+}
+.capa4 .capa4-2 .capa4 .capa4-2 .grid6 {
+  border-radius: 2rem;
+  padding: 1rem;
+  background-color: rgb(14, 14, 66);
+}
+.capa4 .capa4-2 .capa4 .capa4-2 .grid6 .grid6-1 {
+  height: 70%;
+  background-color: rgb(14, 14, 66);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  position: relative;
+}
+.capa4 .capa4-2 .capa4 .capa4-2 .grid6 .grid6-1 img {
+  border-radius: 2rem;
+  margin-right: 1rem;
+}
+.capa4 .capa4-2 .capa4 .capa4-2 .grid6 .grid6-1 label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0.5rem;
+  color: white;
+}
+.capa4 .capa4-2 .capa4 .capa4-2 .grid6 .grid6-2 {
+  height: 30%;
+  background-color: rgb(14, 14, 66);
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.capa4 .capa4-2 .capa4 .capa4-2 .grid6 .grid6-2 label {
+  color: white;
+}
+.capa4 .capa4-2 .capa4 .capa4-2 .grid9 .circulo {
+  display: flex;
+  justify-content: start;
+  align-self: flex-end;
+}
+.capa4 .capa4-2 .capa4 .capa4-2 .grid9 .circulo .icono {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f8f8;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+.capa4 .capa4-2 .capa4 .capa4-2 .grid9 .circulo .icono svg {
+  width: 1rem;
+}
+@media (max-width: 768px) {
+  .capa4 .capa4-1 .grid2 {
+    grid-column: 1/-1;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .capa4 .capa4-2 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto auto auto 100px;
+  }
+  .capa4 .capa4-2 .grid2 {
+    grid-column: 1/-1;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .capa4 .capa4-2 .grid8 {
+    grid-column: 1/-1;
+    grid-row: 2;
+  }
+  .capa4 .capa4-2 .grid5, .capa4 .capa4-2 .grid6 {
+    grid-column: span 1;
+    grid-row: 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .capa4 .capa4-2 .grid7, .capa4 .capa4-2 .grid9 {
+    grid-column: span 1;
+    grid-row: 4;
+  }
+  .capa4 .capa4-2 .grid1, .capa4 .capa4-2 .grid3 {
+    display: none;
+  }
+  .capa4 .capa4-2 .grid10, .capa4 .capa4-2 .grid11 {
+    grid-column: span 1;
+    grid-row: 5;
+    display: grid;
+  }
 }
 
 .capa5 {
@@ -654,7 +1063,7 @@ body {
 
 .footer {
   grid-area: footer;
-  background-color: #ffffff;
+  background-color: #f8f8f8;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
@@ -666,7 +1075,7 @@ body {
   }
 }
 .footer .footer-section {
-  background-color: #ffffff;
+  background-color: #f8f8f8;
   border-radius: 5px;
 }
 .footer .footer-section:nth-child(1) {
