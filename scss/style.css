@@ -15,7 +15,7 @@ body {
 }
 
 .container > * {
-  background-color: yellowgreen;
+  background-color: #f8f8f8;
   border-radius: 0.5rem;
 }
 
@@ -256,7 +256,7 @@ body {
   color: black;
 }
 .capa1 .capa1-hijo2 .card {
-  background-color: #f8f8f8;
+  background-color: #fff;
   height: 300px;
   width: 300px;
   -webkit-clip-path: polygon(25% 0%, 100% 0, 100% 100%, 0 100%, 0 30%);
@@ -309,7 +309,109 @@ body {
 
 .capa2 {
   grid-area: capa2;
-  background-color: rgb(180, 34, 34);
+  background-color: #f8f8f8;
+  grid-template: "caja1 " 5rem "caja2 " 50rem "caja3 " 15rem "caja4 " 15rem;
+}
+.capa2 .cajas1 {
+  grid-area: caja1;
+}
+.capa2 .cajas2 {
+  grid-area: caja2;
+  background-color: aqua;
+}
+.capa2 .cajas2 .a {
+  background-color: aqua;
+}
+.capa2 .cajas2 .a .estrella {
+  background: #f8f8f8;
+}
+.capa2 .cajas2 .a p {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.capa2 .cajas3 {
+  grid-area: caja3;
+  background-color: rgb(29, 56, 56);
+}
+.capa2 .cajas4 {
+  grid-area: caja3;
+  background-color: rgb(75, 24, 195);
+}
+.capa2 .cajas5 {
+  grid-area: caja4;
+  background-color: aqua;
+}
+.capa2 .cajas6 {
+  grid-area: caja4;
+}
+@media (min-width: 575.98px) {
+  .capa2 {
+    display: grid;
+    grid-template: "caja1 caja1 caja1" 10rem "caja2 caja3 caja4" 15rem "caja2 caja3 caja4" 15rem;
+  }
+  .capa2 .cajas1 {
+    grid-area: caja1;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+  .capa2 .cajas1 .texto {
+    display: flex;
+    width: 5rem;
+    height: 2rem;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+  }
+  .capa2 .cajas1 .texto p {
+    color: white;
+    font-size: small;
+    font-weight: 300;
+  }
+  .capa2 .cajas1 .contenedor {
+    display: flex;
+    position: relative;
+    align-items: center;
+    padding: 2rem;
+    gap: 5rem;
+  }
+  .capa2 .cajas1 .contenedor .texto-flecha {
+    font-size: 1.5rem;
+  }
+  .capa2 .cajas1 .contenedor .flecha {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    border: solid 1px grey;
+  }
+  .capa2 .cajas1 .contenedor .flecha img {
+    width: 1.5rem;
+  }
+  .capa2 .cajas2 {
+    grid-area: caja2;
+    background-color: aqua;
+  }
+  .capa2 .cajas3 {
+    grid-area: caja3;
+    background-color: rgb(29, 56, 56);
+  }
+  .capa2 .cajas4 {
+    grid-area: caja3;
+    background-color: rgb(75, 24, 195);
+  }
+  .capa2 .cajas5 {
+    grid-area: caja4;
+    background-color: aqua;
+  }
+  .capa2 .cajas6 {
+    grid-area: caja4;
+    background-color: rgb(27, 26, 74);
+  }
 }
 
 .capa3 {
