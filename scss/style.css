@@ -150,6 +150,132 @@ body {
   background-size: cover;
   background-position: center;
 }
+.capa1 .capa1-hijo1 {
+  margin: 1rem;
+  display: flex;
+  height: 70%;
+}
+.capa1 .capa1-hijo1 .hijo1-contenedor {
+  display: flex;
+}
+.capa1 .capa1-hijo1 .hijo1-contenedor .contenedor1 p {
+  color: white;
+  font-size: clamp(0.3rem, 0.4rem + 1vw, 0.7rem);
+  font-weight: 200;
+  margin: 2rem;
+  padding: 0.2rem;
+  border: solid 2px slategray;
+  border-radius: 15px;
+}
+.capa1 .capa1-hijo1 .hijo1-contenedor .contenedor2 .texto {
+  color: black;
+  margin: 1rem;
+  width: minmax(auto, 150px);
+  color: white;
+}
+.capa1 .capa1-hijo1 .hijo1-contenedor .contenedor2 .texto p {
+  font-size: clamp(1.5625rem, -3.0208rem + 18.3333vw, 5rem);
+}
+.capa1 .capa1-hijo1 .hijo1-contenedor .contenedor2 .boton {
+  display: flex;
+  margin: 1rem;
+  gap: 5px;
+  align-items: center;
+  position: relative;
+}
+.capa1 .capa1-hijo1 .hijo1-contenedor .contenedor2 .boton .btns1 {
+  background-color: #f8f8f8;
+  padding: 10px 14px;
+  border-radius: 8px;
+}
+.capa1 .capa1-hijo1 .hijo1-contenedor .contenedor2 .boton .btns2 {
+  background-color: #f8f8f8;
+  width: 2rem;
+  height: 1rem;
+  padding: 0 12px;
+  position: absolute;
+  left: 6rem;
+  border-radius: 8px;
+}
+.capa1 .capa1-hijo1 .hijo1-contenedor .contenedor2 .boton .btns3 {
+  transform: rotate(45deg);
+  background-color: #f8f8f8;
+  padding: 4px;
+  border-radius: 50%;
+  display: flex;
+}
+.capa1 .capa1-hijo1 .hijo1-contenedor .contenedor2 .boton .btns3 .icon {
+  background-color: #26283d;
+  padding: 10px;
+  border-radius: 50%;
+}
+.capa1 .capa1-hijo2 {
+  display: flex;
+  height: 30%;
+  margin: 2rem;
+  position: relative;
+  justify-content: space-between;
+}
+.capa1 .capa1-hijo2 .circulos {
+  background-color: #de1818;
+}
+.capa1 .capa1-hijo2 .circulos .capa-2 {
+  position: relative;
+}
+.capa1 .capa1-hijo2 .circulos .capa-2 .flecha .btns1 {
+  background-color: #f8f8f8;
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+}
+.capa1 .capa1-hijo2 .circulos .capa-3 .btn {
+  background-color: #f8f8f8;
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+}
+.capa1 .capa1-hijo2 .circulos .capa-3 .flecha img {
+  width: 1rem;
+}
+.capa1 .capa1-hijo2 .card {
+  background-color: #f8f8f8;
+  height: 300px;
+  width: 300px;
+  -webkit-clip-path: polygon(25% 0%, 100% 0, 100% 100%, 0 100%, 0 30%);
+          clip-path: polygon(25% 0%, 100% 0, 100% 100%, 0 100%, 0 30%);
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+.capa1 .capa1-hijo2 .card .circulo {
+  display: flex;
+  justify-content: end;
+}
+.capa1 .capa1-hijo2 .card .circulo .icono {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  background-color: #f8f8f8;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+.capa1 .capa1-hijo2 .card .circulo .icono img {
+  width: 1rem;
+}
+.capa1 .capa1-hijo2 .card .parrafo {
+  font-weight: 5000;
+  font-size: large;
+  padding: 2rem;
+}
+.capa1 .capa1-hijo2 .card .linea {
+  border: 1px solid rgba(187, 184, 184, 0.8235294118);
+  padding: 0;
+}
+.capa1 .capa1-hijo2 .card .palabras-tres {
+  display: flex;
+  padding: 0;
+}
 
 .capa2 {
   grid-area: capa2;
