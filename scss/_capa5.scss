@@ -3,6 +3,7 @@
     background-color: #e7dfdf;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
     gap: 20px;
     padding: 20px;
 
@@ -12,8 +13,95 @@
     }
 
     .capa5-1{
+        background-color: #e7dfdf;
+        border-radius: 2rem;
 
-        background-color: #ffffff;
-        border-radius: 5px;
+        .grid1{
+            
+
+            label{
+                font-size: small;
+                padding: 5px;
+                border-radius: 20px;
+                background: #000;
+                color: #ffffff;
+            }
+        }
     }
+
+    .capa5-2{
+            background-color: #ffffff;
+            border-radius: 5px;
+            grid-column-start: 2;
+            grid-column-end:4;
+            padding: 20px;
+            .grid2{
+                padding: 10px;
+                display: grid;
+                grid-template-columns: 87% 13%;
+
+                .grid2-1{
+
+                    label{
+                        font-size: 3.5rem;
+                    }
+                }
+                .grid2-2 {
+                    height: 2rem;
+                    display: flex;
+                    background-color: #e7dfdf;
+                    padding: 0 4px;
+                    border-radius: 1rem;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+                
+                .grid2-2 .a, 
+                .grid2-2 .b {
+                    padding: 0.2rem 0.4rem;
+                    border-radius: 1rem;
+                }
+                
+                .grid2-2 .a {
+                    background-color: aqua;
+                    margin: 0.2rem;
+                }
+                
+                .grid2-2 .a:hover, 
+                .grid2-2 .b:hover {
+                    background-color: #f1f1f1;
+                    cursor: pointer;
+                }
+            }
+            .grid3{
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: 160px;
+                .grid3-1, .grid3-2 {
+                    background-color: #ffffff;
+                    display: grid;
+                    label {
+                        align-self: end;
+                        justify-self: start;
+                    }
+                }
+                .grid3-4{
+                    width: 100%;
+                    height: 100%;
+                    overflow: hidden;
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-end;
+                    border-radius: 2rem;
+    
+                    img {
+                        width: 100%;
+                        height: auto;
+                        object-fit: contain;
+
+                    }
+                }
+
+            }
+        }
 }
