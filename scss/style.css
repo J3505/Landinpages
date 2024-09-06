@@ -327,7 +327,9 @@ body {
 }
 .capa2 .cajas2 .a p {
   font-size: 1.5rem;
-  font-weight: 500;
+}
+.capa2 .cajas2 .b .minicard {
+  background-color: rgb(108, 125, 125);
 }
 .capa2 .cajas3 {
   grid-area: caja3;
