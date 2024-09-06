@@ -216,26 +216,44 @@ body {
   position: relative;
   justify-content: space-between;
 }
-.capa1 .capa1-hijo2 .circulos {
-  background-color: #de1818;
-}
 .capa1 .capa1-hijo2 .circulos .capa-2 {
   position: relative;
 }
-.capa1 .capa1-hijo2 .circulos .capa-2 .flecha .btns1 {
-  background-color: #f8f8f8;
-  border-radius: 50%;
+.capa1 .capa1-hijo2 .circulos .capa-2 .flecha {
   width: 5rem;
   height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  -webkit-backdrop-filter: blur(10.5px);
+          backdrop-filter: blur(10.5px);
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
-.capa1 .capa1-hijo2 .circulos .capa-3 .btn {
-  background-color: #f8f8f8;
-  border-radius: 50%;
+.capa1 .capa1-hijo2 .circulos .capa-2 .flecha p {
+  text-align: center;
+  color: white;
+}
+.capa1 .capa1-hijo2 .circulos .capa-3 .flecha {
+  position: absolute;
+  top: 4rem;
   width: 5rem;
   height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  -webkit-backdrop-filter: blur(0px);
+          backdrop-filter: blur(0px);
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 .capa1 .capa1-hijo2 .circulos .capa-3 .flecha img {
-  width: 1rem;
+  text-align: center;
+  color: black;
 }
 .capa1 .capa1-hijo2 .card {
   background-color: #f8f8f8;
@@ -243,6 +261,8 @@ body {
   width: 300px;
   -webkit-clip-path: polygon(25% 0%, 100% 0, 100% 100%, 0 100%, 0 30%);
           clip-path: polygon(25% 0%, 100% 0, 100% 100%, 0 100%, 0 30%);
+  padding: 1rem;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   z-index: 1;
@@ -257,6 +277,8 @@ body {
   align-items: center;
   justify-items: center;
   background-color: #f8f8f8;
+  width: 2.5rem;
+  height: 2.5rem;
   border-radius: 50%;
   border: 1px solid black;
 }
@@ -266,15 +288,23 @@ body {
 .capa1 .capa1-hijo2 .card .parrafo {
   font-weight: 5000;
   font-size: large;
-  padding: 2rem;
+}
+.capa1 .capa1-hijo2 .card .parrafo p {
+  padding: 4.5rem 0.1rem 0.3rem 0.1rem;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
 }
 .capa1 .capa1-hijo2 .card .linea {
   border: 1px solid rgba(187, 184, 184, 0.8235294118);
-  padding: 0;
 }
 .capa1 .capa1-hijo2 .card .palabras-tres {
   display: flex;
-  padding: 0;
+  padding: 1.5rem;
+  justify-content: space-between;
+}
+.capa1 .capa1-hijo2 .card .palabras-tres span {
+  font-size: medium;
+  font-weight: 500;
 }
 
 .capa2 {

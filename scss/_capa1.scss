@@ -111,34 +111,54 @@
         justify-content: space-between;
         
         .circulos{
-            background-color: #de1818;
+            // background-color: #de1818;
             // width: 150px;
             .capa-2{
                 position: relative;
-               
+            //    background-color: aqua;
                 .flecha{
-                    .btns1{
-                        background-color: #f8f8f8;
-                        border-radius: 50%;
-                        width: 5rem;
-                        height: 5rem;
+                    // position: absolute;
+                    width: 5rem;
+                    height: 5rem;
+                    display: flex;
+                    align-items: center; 
+                    justify-content: center;    
+                    // background-color: #f8f8f8;
+                    background: rgba( 255, 255, 255, 0.4 );
+                    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+                    backdrop-filter: blur( 10.5px );
+                    border-radius: 50%;
+                    border: 1px solid rgba( 255, 255, 255, 0.18 );
+                    p{
+                        
+                        text-align: center;
+                        color: white;
                     }
-                    img{
-
-                    }
+                    
                 }
             }
             .capa-3{
-                .btn{
-                    background-color: #f8f8f8;
-                    border-radius: 50%;
+                .flecha{
+                    position: absolute;
+                    top: 4rem;
                     width: 5rem;
                     height: 5rem;
-                }
-                .flecha{
+                    
+                    display: flex;
+                    align-items: center; 
+                    justify-content: center;    
+                    background: rgba( 255, 255, 255, 0.4 );
+                    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+                    backdrop-filter: blur( 0px );
+                    border-radius: 50%;
+                    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
                     img{
-                        width: 1rem;
+                        
+                        text-align: center;
+                        color: black;
                     }
+                    
                 }
                 
             }
@@ -149,8 +169,8 @@
             height: 300px;
             width:  300px;
             clip-path: polygon(25% 0%, 100% 0, 100% 100%, 0 100%, 0 30%);
-            // position: absolute;
-            // margin: 32rem 15rem;
+            padding: 1rem;
+            border-radius: 10px;
 
             display: flex;
             flex-direction: column;
@@ -161,12 +181,15 @@
                 display: flex;
                 justify-content: end;
 
+
                 .icono{
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     justify-items: center;
                     background-color: #f8f8f8;
+                    width: 2.5rem;
+                    height: 2.5rem;
                     border-radius: 50%;
                     border:1px solid black ;
                     img{
@@ -176,20 +199,30 @@
 
             }
             .parrafo{
+                
                 font-weight: 5000;
                 font-size: large;
-                padding: 2rem;
 
+                p{
+                    padding: 4.5rem 0.1rem 0.3rem  0.1rem;
+                    font-size: 1.2rem;
+                    line-height: 1.5rem;
+                }
             }
             .linea{
-                // background-color: #bbb8b810;
                 border: 1px solid #bbb8b8d2;
-                padding: 0;
+
             }
             .palabras-tres{
                 display: flex;
-                // background-color: #572222;
-                padding: 0;
+                padding: 1.5rem;
+                justify-content: space-between;
+
+                span{
+                    font-size: medium;
+                    font-weight: 500;
+                    
+                }
 
             }
         }
