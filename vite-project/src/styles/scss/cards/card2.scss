@@ -4,7 +4,7 @@
     justify-content: space-between;
     background-color: white;
     @extend %fullspace;
-    :nth-child(1){
+    .card2-item1{
         display: flex;
         justify-content: end;
         .card2-icon{
@@ -18,7 +18,7 @@
         font-size: 1.5rem;
     }
     }
-    :nth-child(2){
+    .card2-item2{
         display: flex;
         justify-content: center;
         h2{
@@ -32,7 +32,7 @@
             }
         }
     }
-    :nth-child(3){
+    .card2-item3{
         .card2-button{
             display: flex;
             justify-content: space-between;

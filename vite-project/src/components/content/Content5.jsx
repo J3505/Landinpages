@@ -10,13 +10,13 @@ const Content5 = () => {
 
   return (
     <div className="container-content5">
-      <div></div>
-      <div></div>
-      <div><Card2 description = {description1}/></div>
-      <div><Card2 description = {description2}/></div>
-      <div></div>
-      <div><Card2 description = {description3}/></div>
-      <div></div> 
+      <div className="content5-item1"></div>
+      <div className="content5-item2"></div>
+      <div className="content5-item3"><Card2 description = {description1}/></div>
+      <div className="content5-item4"><Card2 description = {description2}/></div>
+      <div className="content5-item5"></div>
+      <div className="content5-item6"><Card2 description = {description3}/></div>
+      <div className="content5-item7"></div> 
     </div>
   )
 }
