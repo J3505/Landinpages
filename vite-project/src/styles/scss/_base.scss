@@ -24,6 +24,10 @@ $color-dark : #000;
     width: 100%;
     height: 100%;
 }
+%fancy{
+    padding: 1rem;
+    gap: 1rem;
+}
 *{
     margin: 0;
     padding: 0;

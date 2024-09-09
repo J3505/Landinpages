@@ -1,0 +1,41 @@
+.card2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    @extend %fullspace;
+    :nth-child(1){
+        display: flex;
+        justify-content: end;
+        .card2-icon{
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+    }
+    }
+    :nth-child(2){
+        display: flex;
+        justify-content: center;
+        h2{
+            font-size: 2rem;
+            @media (max-width: 1024px){
+                font-size: 1.5rem;
+            }
+
+            @media (max-width: 768px){
+                font-size: 1.5rem;
+            }
+        }
+    }
+    :nth-child(3){
+        .card2-button{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}

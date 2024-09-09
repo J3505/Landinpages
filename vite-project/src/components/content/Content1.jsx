@@ -1,4 +1,4 @@
-import '../../styles/scss/content/content1.scss'
+
 const Content1 = () => {
   return (
     <>

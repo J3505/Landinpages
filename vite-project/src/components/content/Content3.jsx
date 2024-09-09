@@ -1,4 +1,3 @@
-import '../../styles/scss/content/content3.scss'
 
 const Content3 = () => {
   return (

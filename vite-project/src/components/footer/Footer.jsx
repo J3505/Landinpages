@@ -11,6 +11,8 @@ const Footer = () => {
                 <div className="footer-item-top"></div>
             </div>
             <div className="footer-bottom">
+              <div className="footer-item-bottom"></div>
+              <div className="footer-item-bottom"></div>
 
             </div>
         </div>
