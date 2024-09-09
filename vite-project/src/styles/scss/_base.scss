@@ -1,4 +1,4 @@
-$color-body : #fff;
+$color-body : #f8f8f8;
 $color-dark : #000;
 
 @mixin flexlayout{
@@ -28,9 +28,12 @@ $color-dark : #000;
     margin: 0;
     padding: 0;
 }
-body {
+.root{
     font-family: 'Roboto', sans-serif;
     background-color: $color-body;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 1rem;
   }
   
