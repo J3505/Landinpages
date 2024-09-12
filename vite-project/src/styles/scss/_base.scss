@@ -40,4 +40,9 @@ $color-dark : #000;
     grid-template-columns: 1fr;
     gap: 1rem;
   }
+.root > *{
+    border:solid 1px $color-dark;
+    border-radius: 1.5rem;
+}
+
   
