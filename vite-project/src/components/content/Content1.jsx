@@ -1,86 +1,65 @@
-import Card1 from "../cards/Card1"
+
+import { GoArrowUpRight } from "react-icons/go";
+import Card0 from   "../cards/cardsContent1/Card0"
+import  Circle from   "../cards/cardsContent1/Circle"
 
 
 const Content1 = () => {
   return (
     <>
+
       <div className="container-content1">
-        {/*  */}
+                    {/* 1 */}
+        <div className="item">
 
-
-        <div className="texto-1">
-          <p>Lorem ipsum</p>
-        </div>
-
-        <div className="texto-2">
-
-          <div className="textoA">
-            {/* <!-- <p>Explro the Wordl with us </p> --> */}
-            <div className="palabra">
-              Explore the
-            </div>
-            <div className="palabra">
-              Wordl with us
-            </div>
+          <div className="titulo">
+            <p>Lorem ipsum</p>
           </div>
 
-          <div className="textoB">
-            <div className="botn">
+        </div>
+                    {/* 2 */}
+        <div  className="item">
+
+          <div className="texto">
+              {/* <!-- <p>Explro the Wordl with us </p> --> */}
+              <div className="palabra">
+                <label >Explore the</label> 
+              </div>
+              <div className="palabra">
+                <label >Wordl with us</label>
+              </div>
+            </div>
+        </div>
+ 
+                    {/* 3 */}
+        <div  className="item" >
+
+            <div className="boton">
               <div className="textoLoren">Lorean more</div>
               <div className="espacio"></div>
               <div className="flechadiagonal">
-                {/* <img src="img/flechaDiagonal.svg" alt="aun"> */}
+                  <GoArrowUpRight style={{color:"#fff"}} />
+                
+                {/* <img src={bg}  alt="aun" width={45}/> */}
+                
               </div>
             </div>
-          </div>
-
         </div>
 
-      
-      <div className="capa1-hijo2">
-
-        <div className="circulos">
-
-          <div className="capa-2">
-            <div className="flecha">
-              <p>contact</p>
-            </div>
-
-          </div>
-
-          <div className="capa-3">
-            <div className="flecha">
-              {/* <img src="img/flechaAbajo.svg" alt="aun"> */}
-            </div>
-
-          </div>
-
-
+                    {/* 4 */}
+        <div className="item">
+            <Circle/>
         </div>
-
-        <div className="card">
-          <div className="circulo">
-            <div className="icono">
-              {/* <img src="./img/fleDerecha.svg" alt=""> */}
-            </div>
-          </div>
-          <div className="parrafo">
-            <p>Explore our curated list of must-vist destinations around the globe.</p>
-          </div>
-          <div className="linea"></div>
-          <div className="palabras-tres">
-            <div className="letra1"><span>(FIRST)</span></div>
-            <div className="letra2"><span>(PRESENT)</span></div>
-            <div className="letra3"><span>01</span></div>
-          </div>
+                    {/* 5 */}
+        <div className="item">
+            <Card0/>
         </div>
-      </div>
 
 
     </div >
       
     </>
-  )
+    );
 }
 
 export default Content1
